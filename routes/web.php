@@ -21,3 +21,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/admin/category-index','AdminController@CategoryIndex');
+Route::post('/admin/category-store','AdminController@CategoryStore');
+Route::post('/admin/category-edit','AdminController@CategoryEdit');
+Route::get('/admin/category-delete/{id}','AdminController@CategoryDelete');

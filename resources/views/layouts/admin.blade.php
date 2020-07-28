@@ -66,7 +66,7 @@
             </a>
 
         </div>
-
+      
 
         <div class="sidebar-wrapper s">
             <ul class="nav">
@@ -74,12 +74,20 @@
                     <div class="form-inline mx-5">
                         <span></span><img src="{{asset('icons/dot.PNG')}}" alt=""
                                           style="border-radius: 100px!important; width: 10px!important; height: 10px!important;">
-                        <span class="mx-2"></span><a href="/dashboard"
+                        <span class="mx-2"></span><a href="/"
                                                      style="color: white!important; text-decoration: none!important;">Dashboard</a>
                     </div>
 
                 </li>
                 <hr>
+                <li>
+                    <div class="form-inline mx-5">
+                        <span></span><img src="{{asset('icons/dot.PNG')}}" alt=""
+                                          style="border-radius: 100px!important; width: 10px!important; height: 10px!important;">
+                        <span class="mx-2"></span><a href="/admin/category-index"
+                                                     style="color: white!important; text-decoration: none!important;">News Categories</a>
+                    </div>
+                   
             
 
             </ul>
@@ -126,7 +134,7 @@
             </div>
         </nav>
         <main class=" py-5 mt-5">
-        
+        @include('common.alert')
             @yield('render')
         </main>
     </div>
