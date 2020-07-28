@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -80,9 +80,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+              
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
@@ -97,4 +95,4 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}
