@@ -19,6 +19,7 @@
           rel="stylesheet">
     <!-- CSS Files -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet"/>
+    
     <link href="{{asset('paper-dashboard/css/paper-dashboard.min.css')}}"
           rel="stylesheet"/>
     <link href="{{ asset('boostrap/css/bootstrap.css') }}" rel="stylesheet">
