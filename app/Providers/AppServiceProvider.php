@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Logo;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('*', function ($view)
+         {
+            $logo = Logo::latest()->first();
+            $view->with(compact('logo'));
+         }
+        );
     }
 }

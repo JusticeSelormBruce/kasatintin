@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('render')
     
-<div class="container">
+<div class="container-fluid">
   
 <div class="alert alert-primary py-0" role="alert">
 All News Category
